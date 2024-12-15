@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+  font-size: 1.5vw;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: black;
+}
+
+*::before,
+*,
+*::after {
+  padding: initial;
+  margin: initial;
+}
+
+body {
+  background-color: white;
+  font-size: inherit;
+  padding-inline: 2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.advert {
+  font-size: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 50px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#header {
+  block-size: 5em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#the-main-header {
+  background-color: lightblue;
+}
+
+header {
+  background-color: white;
+  block-size: 5em;
+  display: flex;
+}
+
+#logo {
+  color: navy;
+  min-inline-size: 22em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  padding-inline-start: 5em;
+  font-size: 60%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: 5em;
+  transition: all 0.25s;
+}
+
+nav:has(a:hover) a:not(:hover) {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+#menu {
+  background-color: lightgreen;
+  inline-size: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#menu-button {
+  background-color: transparent;
+  border: none;
+  font-weight: bolder;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#filled {
+  background-color: lightgrey;
+  position: absolute;
+  right: 0;
+  top: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 15em;
+  block-size: 0;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+#menu-list {
+  inline-size: 12em;
+  block-size: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+#menu-list a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+#menu-list:has(a:hover) a:not(:hover) {
+  color: grey;
+}
