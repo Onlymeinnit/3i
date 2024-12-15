@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: red;
+  background-color: white;
   padding: 0;
   margin: 0 auto;
   /* MOBILE FIRST APPROACH */
@@ -31,7 +31,7 @@ p {
 }
 
 .advert {
-  background-color: red;
+  background-color: whitesmoke;
   color: grey;
   display: flex;
   flex-direction: column;
