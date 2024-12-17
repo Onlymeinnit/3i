@@ -39,6 +39,9 @@ function changeImages() {
   images[index]();
   index = (index + 1) % images.length;
 
+const email = document.getElementById("email");
+  // Add more things here
+
   setTimeout(changeImages, 5000);
 }
 
