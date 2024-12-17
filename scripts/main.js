@@ -39,10 +39,12 @@ function changeImages() {
   images[index]();
   index = (index + 1) % images.length;
 
-const email = document.getElementById("email");
-  // Add more things here
-
   setTimeout(changeImages, 5000);
 }
 
 changeImages();
+
+const senderName = document.getElementById("sender-name");
+const senderEmail = document.getElementById("sender-email);
+const senderMessage = document.getElementById("sender-message);                                
+const receiver = document.getElementById("3i-email").setAttributes("href", "mailto:okonjie4@gmail.com?cc=okonjie4@gmail.com&bcc=okonjie4@gmail.com&subject=${senderName}&body=${senderMessaage}");
