@@ -31,7 +31,7 @@ p {
 }
 
 .advert {
-  background-color: red;
+  background-color: whitesmoke;
   color: grey;
   display: flex;
   flex-direction: column;
