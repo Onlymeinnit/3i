@@ -47,4 +47,8 @@ changeImages();
 const senderName = document.getElementById("sender-name");
 const senderEmail = document.getElementById("sender-email);
 const senderMessage = document.getElementById("sender-message);                                
-const receiver = document.getElementById("3i-email").setAttributes("href", "mailto:okonjie4@gmail.com?cc=okonjie4@gmail.com&bcc=okonjie4@gmail.com&subject=${senderName}&body=${senderMessaage}");
+const receiver = document.getElementById("3i-email");
+
+receiver.addEventListener("click", function () {
+  receiver.setAttribute("href", "mailto:okonjie4@gmail.com?cc=okonjie4@gmail.com&bcc=okonjie4@gmail.com&subject=${senderName}&body=${senderMessage}");
+});
